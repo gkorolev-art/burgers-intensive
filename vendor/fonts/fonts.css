@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("./Gilroy-Semibold.woff2") format("woff2"),
+    url("./Gilroy-Semibold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("./Merriweather-Black.woff2") format("woff2"),
+    url("./Merriweather-Black.woff") format("woff");
+}

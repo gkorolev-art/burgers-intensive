@@ -1,0 +1,8 @@
+.main__title {
+  margin: 0;
+  font-family: "Merriweather", sans-serif;
+  font-size: 120px;
+  line-height: 130%; /* 156px */
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
