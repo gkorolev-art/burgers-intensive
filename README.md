@@ -1,4 +1,4 @@
-# Проект: Burger House
+# Burger House
 
 **О проекте**
 
