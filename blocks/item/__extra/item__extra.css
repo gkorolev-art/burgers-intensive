@@ -1,6 +1,5 @@
-.header {
+.item__extra {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 40px 0;
 }

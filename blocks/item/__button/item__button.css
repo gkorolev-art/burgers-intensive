@@ -1,0 +1,7 @@
+.item__button {
+  max-width: 182px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: center;
+}

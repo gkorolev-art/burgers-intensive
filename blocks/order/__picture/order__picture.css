@@ -1,0 +1,6 @@
+.order__picture {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 764px);
+  z-index: -1;
+}

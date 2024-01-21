@@ -1,0 +1,6 @@
+.lead__info {
+  max-width: 608px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 56px;
+}

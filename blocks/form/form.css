@@ -1,0 +1,9 @@
+.form {
+  margin: 60px 102px 0 auto;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  max-width: 424px;
+  border-radius: 16px;
+  outline: 1px solid #353535;
+  background: #211a16;
+}

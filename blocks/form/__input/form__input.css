@@ -1,0 +1,21 @@
+.form__input {
+  width: 344px;
+  height: 62px;
+  background: linear-gradient(95.61deg, #da8023 0%, #e2b438 100%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__input input {
+  padding: 16px 10px;
+  background: #211a16;
+  border-radius: 8px;
+  color: #fff;
+  width: 342px;
+  height: 60px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid transparent;
+}
