@@ -8,7 +8,7 @@
 
 Вёрстка страницы по представленному макету в Фигме.
 
-[Ссылка на макет в Figma](https://www.figma.com/file/9HV0xKZugQSU3xDEJ6Nnx8/1st_screen?type=design&node-id=0%3A44&mode=design&t=ApQVhQnSt1JUuRrm-1)
+[Ссылка на макет в Figma](https://www.figma.com/file/XMzEovBvEtEJzlUpPsoriv/Burger-Chedder?type=design&mode=design&t=qx1KYAdxOVYb5G8D-1)
 
 **Используемые технологии**
 
@@ -17,6 +17,6 @@
 - Семантические теги HTML
 - Использование файловой структуры BEM nested
 - Локальное подключение шрифтов и их оптимизация
-- Выравнивание сеток с помощью Flexbox
+- Выравнивание сеток с помощью Grid и Flexbox
 
 [Ссылка на реализованный проект](https://gkorolev-art.github.io/burgers-intensive/)
