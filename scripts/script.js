@@ -58,7 +58,6 @@ orderButton.addEventListener("click", (evt) => {
 // Изменение валюты
 const changeCurrency = document.getElementById("changeCurrency");
 const itemsPrice = Array.from(document.querySelectorAll(".item__price"));
-console.log(itemsPrice);
 
 changeCurrency.onclick = function (evt) {
   let currentCurrency = evt.target.innerText;
