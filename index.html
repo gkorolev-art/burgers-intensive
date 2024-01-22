@@ -8,6 +8,7 @@
   <meta name="author" content="Gregory Carroll" />
   <title>Бургер Чеддер</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./scripts/script.js" defer></script>
 </head>
 
 <body class="page">
@@ -18,12 +19,12 @@
       </a>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Почему у нас</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Меню бургеров</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Оформление заказа</a></li>
+          <li class="menu__item"><a class="menu__link" data-link="advantagesSection">Почему у нас</a></li>
+          <li class="menu__item"><a class="menu__link" data-link="productsSection">Меню бургеров</a></li>
+          <li class="menu__item"><a class="menu__link" data-link="orderSection">Оформление заказа</a></li>
         </ul>
       </nav>
-      <div class="header__currency" title="Мзменить валюту">$</div>
+      <div class="header__currency" title="Мзменить валюту" id="changeCurrency">$</div>
     </header>
     <article class="lead">
       <div class="container lead__container">
@@ -34,14 +35,14 @@
             вкусом
             наших бургеров.
             Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.</p>
-          <button class="button">Смотреть меню</button>
+          <button class="button" id="viewButton">Смотреть меню</button>
         </div>
         <img src="./images/main_burger.png" alt="Бургер Чеддер" class="lead__image">
       </div>
     </article>
   </section>
   <main>
-    <section class="advantages">
+    <section class="advantages" id="advantagesSection">
       <div class="container">
         <h2 class="section-title">Почему нас выбирают?</h2>
         <ul class="advantages__list">
@@ -71,7 +72,7 @@
         </ul>
       </div>
     </section>
-    <section class="products">
+    <section class="products" id="productsSection">
       <div class="container">
         <h2 class="section-title products__title">Выберите свой бургер</h2>
         <ul class="products__list">
@@ -83,7 +84,7 @@
               соус</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">8 $</p>
+                <p class="item__price" data-base-price="8">8 $</p>
                 <p class="item__weight">360 гр.</p>
               </div>
               <div class="item__order">
@@ -106,7 +107,7 @@
               бекон, соус BBQ</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">7 $</p>
+                <p class="item__price" data-base-price="7">7 $</p>
                 <p class="item__weight">390 гр.</p>
               </div>
               <div class="item__order">
@@ -129,7 +130,7 @@
               горчица</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">10 $</p>
+                <p class="item__price" data-base-price="10">10 $</p>
                 <p class="item__weight">420 гр.</p>
               </div>
               <div class="item__order">
@@ -151,7 +152,7 @@
               соус барбекю, соус сырный, салат айсберг</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">7 $</p>
+                <p class="item__price" data-base-price="7">7 $</p>
                 <p class="item__weight">220 гр.</p>
               </div>
               <div class="item__order">
@@ -173,7 +174,7 @@
               сыр, сырный соус, кетчуп, зелень</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">8 $</p>
+                <p class="item__price" data-base-price="8">8 $</p>
                 <p class="item__weight">220 гр.</p>
               </div>
               <div class="item__order">
@@ -196,7 +197,7 @@
               зелень</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">9 $</p>
+                <p class="item__price" data-base-price="9">9 $</p>
                 <p class="item__weight">320 гр.</p>
               </div>
               <div class="item__order">
@@ -218,7 +219,7 @@
               соус барбекю, соус сырный, салат айсберг</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">8 $</p>
+                <p class="item__price" data-base-price="8">8 $</p>
                 <p class="item__weight">280 гр.</p>
               </div>
               <div class="item__order">
@@ -241,7 +242,7 @@
               зелень</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">7 $</p>
+                <p class="item__price" data-base-price="7">7 $</p>
                 <p class="item__weight">380 гр.</p>
               </div>
               <div class="item__order">
@@ -264,7 +265,7 @@
               горчица, зелень</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">11 $</p>
+                <p class="item__price" data-base-price="11">11 $</p>
                 <p class="item__weight">400 гр.</p>
               </div>
               <div class="item__order">
@@ -287,7 +288,7 @@
               томат</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">9 $</p>
+                <p class="item__price" data-base-price="9">9 $</p>
                 <p class="item__weight">300 гр.</p>
               </div>
               <div class="item__order">
@@ -310,7 +311,7 @@
               соус, кетчуп, зелень</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">8 $</p>
+                <p class="item__price" data-base-price="8">8 $</p>
                 <p class="item__weight">320 гр.</p>
               </div>
               <div class="item__order">
@@ -333,7 +334,7 @@
               горчица, зелень</p>
             <div class="item__extra">
               <div class="item__info">
-                <p class="item__price">9 $</p>
+                <p class="item__price" data-base-price="9">9 $</p>
                 <p class="item__weight">360 гр.</p>
               </div>
               <div class="item__order">
@@ -351,7 +352,7 @@
         </ul>
       </div>
     </section>
-    <section class="order">
+    <section class="order" id="orderSection">
       <div class="container order__container">
         <h2 class="section-title order__title">Оформление заказа</h2>
         <img src="./images/order_image.png" alt="Бургер в коробке" class="order__picture">
@@ -359,15 +360,15 @@
           <p class="form__text">Заполните все данные и наш менеджер свяжется с вами для подтверждения заказа</p>
           <div class="form__inputs">
             <div class="form__input">
-              <input type="text" placeholder="Ваш заказ">
+              <input type="text" placeholder="Ваш заказ" id="burger">
             </div>
             <div class="form__input">
-              <input type="text" placeholder="Ваше имя" class="input">
+              <input type="text" placeholder="Ваше имя" class="input" id="name">
             </div>
             <div class="form__input">
-              <input type="text" placeholder="Номер телефона">
+              <input type="text" placeholder="Номер телефона" id="phone">
             </div>
-            <button class="button form__button">Оформить заказ</button>
+            <button class="button form__button" id="orderButton">Оформить заказ</button>
           </div>
         </form>
       </div>
